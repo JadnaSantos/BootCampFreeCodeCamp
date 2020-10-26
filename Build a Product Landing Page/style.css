@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.4;
+}
+
+img{
+    max-width: 100%;
+}
+
+iframe{
+    margin-bottom: 20px;
+
+}
+section h2{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+nav{
+    background-color: #3d405b;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+   
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.header-left{
+    padding-right:20px;
+    width: 60%;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.feature{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 1.66%;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.feature h2 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.feature p{
+    font-size: 12px;
+    line-height: 25px;
+}
+
+form{
+    margin-bottom: 30px;
+}
+
+form .flex{
+    display: flex;
+}
+
+.bg-blue{
+    background-color:#3d405b;
+}
+
+.btn{
+    background-color: #e8eaf6;
+    border-radius: 5px;
+    color: black;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn-ghost:active{
+    transform: none;
+}
+
+form input{
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+footer{
+    background-color: #e8eaf6;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 480px){
+    .header-left, .header-right {
+        width: 100%;
+    }
+    .header-right {
+        order: 0;
+    }
+    .header-left {
+        order: 1;
+    }
+    .feature{
+        margin: 10px;
+        width: 100%;
+    }
+}
